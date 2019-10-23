@@ -33,7 +33,7 @@ class ToneGenerator {
             this.oscillator.start();
             this.hasRun = true;
         }
-        this.gainEffect.gain.exponentialRampToValueAtTime(1, this.context.currentTime + 1);
+        this.gainEffect.gain.setValueAtTime(1, this.context.currentTime);
         this.isRunning = true;
     }
 
